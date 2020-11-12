@@ -33,7 +33,7 @@ main{
     padding: 20px;
     padding-left: 25px;
 }
-.container__content h3{
+.container__content .container__content_title{
     font-weight: 700;
     color: rgb(41,40,40);
     padding-bottom: 7px;
@@ -45,14 +45,19 @@ main{
 .container__content_perfil{
     padding-top: 2rem;
     display: flex;
+    justify-content: space-between;
 }
-.container__content_perfil .data img{
-    width: 10%;
-    height: 10%;
-    border-radius: 100px;
+.drawer{
+    position: absolute;
+    width: 2.7rem;
+    border-radius: 50%;
 }
-.container__content_perfil .data{
+.data{
     padding-left: 10px;
+}
+.data__user{
+    padding-left: 3.6rem;
+    margin: 5px 0 4.5px 0;
 }
 h4{
     font-weight: 700;
@@ -61,4 +66,64 @@ h4{
 span{
     font-weight: 700;
     color: #9eafc2;
+}
+.btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ecf2f8;
+    /* background-color: #000; */
+    outline: none;
+    padding: 10px;
+    margin: 5px;
+}
+.btn ion-icon{
+  color: #000;
+}
+.share{
+  width: 200px;
+  height: 43px;
+  font-size: 15px;
+  position: relative;
+  background-color: #48556a;
+  border-radius: .5rem;
+  left: 233px;
+  bottom: 100px;
+}
+.share::before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    color: seagreen;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #48556a;
+    border-bottom: 10px solid transparent;
+    right: 45%;
+    bottom: -20px;
+}
+.social__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__icon_details{
+  display: flex;
+  justify-content: space-around;
+  margin: .5rem
+}
+.social__icon h3{
+  color: #6d7f97;
+  position: relative;
+  padding-right: 30px;
+  left: 7.6px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 21.5px;
+    color: #fff;
 }

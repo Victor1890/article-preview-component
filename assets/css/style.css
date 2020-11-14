@@ -68,11 +68,11 @@ span{
     color: #9eafc2;
 }
 .btn{
+    transition: all .3s ease-in;
     cursor: pointer;
     border: none;
     border-radius: 50%;
     background-color: #ecf2f8;
-    /* background-color: #000; */
     outline: none;
     padding: 10px;
     margin: 5px;
@@ -81,6 +81,7 @@ span{
   color: #000;
 }
 .share{
+    display: none;
   width: 200px;
   height: 43px;
   font-size: 15px;
@@ -91,6 +92,7 @@ span{
   bottom: 100px;
 }
 .share::before{
+    transition: all .3s ease-in;
     content: "";
     width: 0;
     height: 0;
@@ -126,4 +128,33 @@ span{
     margin-right: 10px;
     font-size: 21.5px;
     color: #fff;
+}
+@media screen and (max-width: 900px){
+    main{
+        padding: 15px;
+    }
+    .container{
+        width: 20rem;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container__img img{
+        width: 20rem;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .container__content{
+        position: relative;
+        bottom: 15px;
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    .share{
+        position: absolute;
+        left: 178px;
+        bottom: 76px;
+    }
 }
